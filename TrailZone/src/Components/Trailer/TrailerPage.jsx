@@ -9,7 +9,7 @@ const TrailerPage = () => {
     // Fetch data from an external API (example: TMDB API)
     useEffect(() => {
         const fetchMovies = async () => {
-            const apiKey = 'da591fb79761b325c15ddf706240f790';  // Replace with your actual API key
+            const apiKey = 'api-key';  
             const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`;
             try {
                 const response = await fetch(url);
