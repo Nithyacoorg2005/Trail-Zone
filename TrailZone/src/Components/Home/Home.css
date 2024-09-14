@@ -1,0 +1,95 @@
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.bg-video {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.hero-content .btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Featured Trailers */
+.featured-trailers .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-trailers .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Categories Section */
+.categories-section .category-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.categories-section .category-card img {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.categories-section .category-card:hover img {
+    transform: scale(1.1);
+}
+
+.category-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.category-content h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.category-content .btn {
+    padding: 10px 15px;
+}
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 1em;
+}
+
+.site-footer p {
+    margin: 0;
+}
+

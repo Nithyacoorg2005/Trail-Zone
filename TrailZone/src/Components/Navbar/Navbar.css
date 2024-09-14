@@ -1,0 +1,81 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #211f1f;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s ease;
+    width:100%;
+    height:72px;
+}
+
+.navbar:hover {
+    background-color: #111;
+}
+
+.logo h1 {
+    color: #f39c12;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    animation: slay-effect 2s infinite alternate;
+}
+
+/* Logo Animation */
+@keyframes slay-effect {
+    0% { color: #f39c12; transform: rotate(0deg); }
+    50% { color: #e67e22; transform: rotate(3deg); }
+    100% { color: #f39c12; transform: rotate(-3deg); }
+}
+
+/* Nav Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+/* Underline Animation */
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #f39c12;
+    transition: width 0.4s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+    transform: scale(1.1);
+}
+
+/* Hover Grow Effect */
+.nav-links a:hover {
+    transform: translateY(-2px);
+}

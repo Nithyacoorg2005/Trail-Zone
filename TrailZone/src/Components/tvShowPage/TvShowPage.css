@@ -1,0 +1,51 @@
+.tv-show-page {
+    padding: 20px;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.tv-show-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tv-show-card {
+    background: #333;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 200px;
+    color: white;
+}
+
+.tv-show-card img {
+    border-radius: 10px;
+}
+
+.tv-show-details {
+    margin-top: 10px;
+}
+
+.category-card {
+    margin-bottom: 40px;
+}
+
+.search-results {
+    margin-top: 40px;
+}
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 1em;
+}
+
+.site-footer p {
+    margin: 0;
+}
