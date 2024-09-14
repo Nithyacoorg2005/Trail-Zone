@@ -6,10 +6,10 @@ const TvShowPage = () => {
     const [tvShows, setTvShows] = useState([]);
     const [filteredTvShows, setFilteredTvShows] = useState([]);
 
-    // Fetch TV shows data from TMDB API
+
     useEffect(() => {
         const fetchTvShows = async () => {
-            const apiKey = 'da591fb79761b325c15ddf706240f790';  // Replace with your actual API key
+            const apiKey = 'api_key';  
             const url = `https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}&language=en-US&page=1`;
             try {
                 const response = await fetch(url);
@@ -22,7 +22,6 @@ const TvShowPage = () => {
         fetchTvShows();
     }, []);
 
-    // Handle search query
     const handleSearch = (e) => {
         setSearchQuery(e.target.value);
         const filtered = tvShows.filter((show) => 
@@ -33,7 +32,7 @@ const TvShowPage = () => {
 
     return (
         <div className="tv-show-page">
-            {/* Search Bar */}
+           
             <div className="search-bar">
                 <input 
                     type="text"
@@ -44,13 +43,13 @@ const TvShowPage = () => {
                 />
             </div>
 
-            {/* TV Show Categories */}
+         
             <section className="categories py-5">
                 <div className="container">
                     <h2 className="text-center mb-4">Browse TV Shows by Genre</h2>
 
                     <div className="row">
-                        {/* Action TV Shows */}
+                  
                         <div className="col-md-6">
                             <div className="category-card">
                                 <h3>Action TV Shows</h3>
@@ -73,7 +72,7 @@ const TvShowPage = () => {
                             </div>
                         </div>
 
-                        {/* Drama TV Shows */}
+          
                         <div className="col-md-6">
                             <div className="category-card">
                                 <h3>Drama TV Shows</h3>
@@ -98,7 +97,7 @@ const TvShowPage = () => {
                     </div>
 
                     <div className="row">
-                        {/* Romantic TV Shows */}
+        
                         <div className="col-md-6">
                             <div className="category-card">
                                 <h3>Romantic TV Shows</h3>
@@ -121,7 +120,6 @@ const TvShowPage = () => {
                             </div>
                         </div>
 
-                        {/* Horror TV Shows */}
                         <div className="col-md-6">
                             <div className="category-card">
                                 <h3>Horror TV Shows</h3>
@@ -145,7 +143,7 @@ const TvShowPage = () => {
                         </div>
                     </div>
 
-                    {/* If search query is active, display filtered TV shows */}
+         
                     {searchQuery && (
                         <section className="search-results">
                             <h3 className="text-center">Search Results for "{searchQuery}"</h3>
