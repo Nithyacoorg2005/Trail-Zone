@@ -1,1 +1,2 @@
 Trail Zone 
+ is a website for movie enthusiasts to watch and explore trailers of upcoming and popular films. It offers an intuitive interface with smooth navigation through various genres and a search function for specific movies. Built using React.js, the site ensures responsive design, accessible on both desktop and mobile devices. Users can stay updated on the latest movie releases and trailers. The sleek aesthetic, featuring the Orbitron font, enhances the overall user experience.
