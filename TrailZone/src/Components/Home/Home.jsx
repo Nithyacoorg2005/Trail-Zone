@@ -4,7 +4,7 @@ import './Home.css';
 const Home = () => {
     return (
         <div className="home-container">
-            {/* Hero Section */}
+         
             <div className="hero-section">
                 <video autoPlay loop muted className="bg-video">
                     <source src="https://videos.pexels.com/video-files/8263452/8263452-uhd_2732_1440_25fps.mp4" type="video/mp4" />
@@ -17,7 +17,6 @@ const Home = () => {
                 </div>
             </div>
 
-            {/* Featured Trailers Section */}
             <section className="featured-trailers py-5">
                 <div className="container">
                     <h2 className="text-center mb-4">Featured Trailers</h2>
@@ -87,7 +86,7 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Why TrailZone Section */}
+        
             <section className="why-trailzone py-5">
                 <div className="container">
                     <h2 className="text-center mb-4">Why Choose TrailZone?</h2>
@@ -117,7 +116,6 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Categories Section */}
             <section className="categories-section py-5">
                 <div className="container">
                     <h2 className="text-center mb-4">Browse by Categories</h2>
