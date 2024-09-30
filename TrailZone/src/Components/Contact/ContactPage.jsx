@@ -4,13 +4,13 @@ import './ContactPage.css';
 const ContactPage = () => {
     return (
         <div className="contact-container">
-            {/* Hero Section */}
+          
             <div className="contact-hero">
                 <h1>Contact Us</h1>
                 <p style={{paddingLeft:"30px"}}>We'd love to hear from you! Get in touch with us for any inquiries, feedback, or suggestions.</p>
             </div>
 
-            {/* Contact Form Section */}
+    
             <section className="contact-form-section">
                 <div className="container">
                     <div className="row">
@@ -54,7 +54,6 @@ const ContactPage = () => {
                 </div>
             </section>
 
-            {/* Video and Images Section */}
             <section className="media-section py-5">
                 <div className="container">
                     <h2 className="text-center mb-4">Get a Glimpse of TrailZone</h2>
@@ -72,7 +71,7 @@ const ContactPage = () => {
                 </div>
             </section>
 
-            {/* Animated Social Icons Section */}
+         
             <section className="social-media-section py-5">
                 <div className="container text-center">
                     <h2>Connect with Us</h2>
