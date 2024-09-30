@@ -1,4 +1,4 @@
-/* Hero Section */
+
 .contact-hero {
     background-image: url('https://images.pexels.com/photos/731555/pexels-photo-731555.jpeg');
     background-size: cover;
@@ -21,7 +21,6 @@
     margin-top: 10px;
 }
 
-/* Contact Form Section */
 .contact-form-section {
     padding: 60px 0;
 }
@@ -41,7 +40,7 @@
     margin-top: 20px;
 }
 
-/* Media Section */
+
 .media-section .contact-video {
     width: 100%;
     border-radius: 10px;
@@ -52,7 +51,6 @@
     width: 100%;
 }
 
-/* Social Media Section */
 .social-media-section {
     background-color: #f1f1f1;
     padding: 40px 0;
