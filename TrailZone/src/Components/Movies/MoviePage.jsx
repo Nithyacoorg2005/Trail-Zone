@@ -6,10 +6,10 @@ const MoviePage = () => {
     const [movies, setMovies] = useState([]);
     const [filteredMovies, setFilteredMovies] = useState([]);
 
-    // Fetch data from the TMDB API
+    
     useEffect(() => {
         const fetchMovies = async () => {
-            const apiKey = 'api_key';  // Replace with your actual API key
+            const apiKey = 'api_key'; 
             const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`;
             try {
                 const response = await fetch(url);
@@ -22,7 +22,7 @@ const MoviePage = () => {
         fetchMovies();
     }, []);
 
-    // Handle search query
+
     const handleSearch = (e) => {
         setSearchQuery(e.target.value);
         const filtered = movies.filter((movie) => 
@@ -33,7 +33,7 @@ const MoviePage = () => {
 
     return (
         <div className="movie-page">
-            {/* Search Bar */}
+        
             <div className="search-bar">
                 <input 
                     type="text"
@@ -44,13 +44,12 @@ const MoviePage = () => {
                 />
             </div>
 
-            {/* Movie Categories */}
             <section className="categories py-5">
                 <div className="container">
                     <h2 className="text-center mb-4">Browse by Genre</h2>
 
                     <div className="row">
-                        {/* Action Movies */}
+                  
                         <div className="col-md-6">
                             <div className="category-card">
                                 <h3>Action Movies</h3>
@@ -73,7 +72,7 @@ const MoviePage = () => {
                             </div>
                         </div>
 
-                        {/* Drama Movies */}
+                       
                         <div className="col-md-6">
                             <div className="category-card">
                                 <h3>Drama Movies</h3>
@@ -98,7 +97,7 @@ const MoviePage = () => {
                     </div>
 
                     <div className="row">
-                        {/* Romantic Movies */}
+                    
                         <div className="col-md-6">
                             <div className="category-card">
                                 <h3>Romantic Movies</h3>
@@ -121,7 +120,6 @@ const MoviePage = () => {
                             </div>
                         </div>
 
-                        {/* Horror Movies */}
                         <div className="col-md-6">
                             <div className="category-card">
                                 <h3>Horror Movies</h3>
@@ -145,7 +143,7 @@ const MoviePage = () => {
                         </div>
                     </div>
 
-                    {/* If search query is active, display filtered movies */}
+                  
                     {searchQuery && (
                         <section className="search-results">
                             <h3 className="text-center">Search Results for "{searchQuery}"</h3>
