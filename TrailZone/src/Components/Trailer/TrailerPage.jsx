@@ -6,7 +6,7 @@ const TrailerPage = () => {
     const [movies, setMovies] = useState([]);
     const [filteredMovies, setFilteredMovies] = useState([]);
 
-    // Fetch data from an external API (example: TMDB API)
+  
     useEffect(() => {
         const fetchMovies = async () => {
             const apiKey = 'api-key';  
@@ -22,7 +22,7 @@ const TrailerPage = () => {
         fetchMovies();
     }, []);
 
-    // Handle search query
+   
     const handleSearch = (e) => {
         setSearchQuery(e.target.value);
         const filtered = movies.filter((movie) => 
@@ -33,7 +33,7 @@ const TrailerPage = () => {
 
     return (
         <div className="trailer-page">
-            {/* Search Bar */}
+           
             <div className="search-bar">
                 <input 
                     type="text"
@@ -44,13 +44,13 @@ const TrailerPage = () => {
                 />
             </div>
 
-            {/* Trailer Categories */}
+     
             <section className="categories py-5">
                 <div className="container">
                     <h2 style={{fontSize:"50px"}}className="text-center mb-4">Browse by Genre</h2>
 
                     <div className="row">
-                        {/* Action Movies */}
+                    
                         <div className="col-md-6">
                             <div className="category-card">
                                 <h3 style={{fontSize:"40px"}}>Action Movies</h3>
@@ -73,7 +73,6 @@ const TrailerPage = () => {
                             </div>
                         </div>
 
-                        {/* Drama Movies */}
                         <div className="col-md-6">
                             <div className="category-card">
                                 <h3 style={{fontSize:"40px"}}>Drama Movies</h3>
@@ -98,7 +97,6 @@ const TrailerPage = () => {
                     </div>
 
                     <div className="row">
-                        {/* Romantic Movies */}
                         <div className="col-md-6">
                             <div className="category-card">
                                 <h3 style={{fontSize:"40px"}}>Romantic Movies</h3>
@@ -121,7 +119,7 @@ const TrailerPage = () => {
                             </div>
                         </div>
 
-                        {/* Horror Movies */}
+                 
                         <div className="col-md-6">
                             <div className="category-card">
                                 <h3 style={{fontSize:"40px"}}>Horror Movies</h3>
@@ -145,7 +143,6 @@ const TrailerPage = () => {
                         </div>
                     </div>
 
-                    {/* If search query is active, display filtered movies */}
                     {searchQuery && (
                         <section className="search-results">
                             <h3 className="text-center">Search Results for "{searchQuery}"</h3>
